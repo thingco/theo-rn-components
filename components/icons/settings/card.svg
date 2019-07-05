@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="20px" viewBox="0 0 26 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>E79DB470-211F-4A8A-B7F3-CE80AE160772</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Dashboard+Settings" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Account" transform="translate(-16.000000, -409.000000)" fill-rule="nonzero" stroke="#FFFFFF">
+            <g id="icon_settings_card" transform="translate(16.000000, 409.000000)">
+                <g transform="translate(0.000000, 1.000000)">
+                    <rect id="Rectangle" x="0.5" y="-0.5" width="25" height="19" rx="1"></rect>
+                    <rect id="Rectangle-3" x="0.5" y="3.5" width="25" height="3"></rect>
+                    <path d="M3.5,11.5 L10.5,11.5" id="Line-3" stroke-linecap="round"></path>
+                    <path d="M4,15 L14,15" id="Line-3-Copy" stroke-linecap="round"></path>
+                    <circle id="Oval-5" cx="21" cy="13" r="2"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
