@@ -1,9 +1,9 @@
 import React from "react";
 import { TouchableOpacity, View } from "react-native";
 import { BaseText as Text } from "./Base";
-import { Icon } from "./Icons";
+import { Icon } from "./Icon";
 
-import s from "./Styles";
+import s, { COLOUR_LIGHT, COLOUR_WHITE } from "../Styles";
 
 export const AccountDetails = ({ name, email }) => (
   <View>
@@ -17,8 +17,10 @@ export const ProfileMenuItem = ({ icon, text, ...props }) => (
     style={[s.flex_row, s.align_center]}
     onPress={props.onPress}
   >
-    <Icon style={[s.align_center, s.justify_center]} selectorString={icon} />
-    <Text style={[s.flex_1, s.text_lg, s.p_base]}>{text}</Text>
+    <View style={[s.align_center, s.justify_center]}>
+      <Icon selectorString={icon} color={COLOUR_WHITE} height={32} width={32} />
+    </View>
+    <Text style={[s.flex_1, s.text_lg, s.p_base, s.white]}>{text}</Text>
   </TouchableOpacity>
 );
 

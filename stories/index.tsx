@@ -1,12 +1,10 @@
 import React from "react";
-import { Text } from "react-native";
 
 import { storiesOf } from "@storybook/react-native";
-import { themes } from "@storybook/theming";
-import { action } from "@storybook/addon-actions";
-import { linkTo } from "@storybook/addon-links";
 
-import { CenterView } from "./storybook-components/CenterView";
+import s from "../Styles";
+import { Screen } from "../components/Base";
+
 import { Welcome, Colours } from "./storybook-components/Welcome";
 
 import {
@@ -18,12 +16,42 @@ import {
   LinkGroup,
 } from "../components/Controls";
 
+import {
+  Buttons,
+  ExampleProfile as Profile,
+  ExampleTabs as Tabs,
+  ExampleTabScroller as TabScroller,
+} from "./Controls";
+
+import {
+  ExampleImageCard as ImageCard,
+  ExampleScoreBlockCard as ScoreBlockCard,
+} from "./Content";
+
 storiesOf("Welcome", module)
   .add("Overview", () => <Welcome />)
   .add("Brand Colours", () => <Colours />);
 
-storiesOf("Controls", module)
-  .addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
+storiesOf("UI Controls", module)
+  .addDecorator((getStory) => (
+    <Screen style={[s.justify_center, s.align_stretch]}>{getStory()}</Screen>
+  ))
+  .add("buttons", () => <Buttons />)
+  .add("profile menu", () => <Profile />)
+  .add("tabs", () => <Tabs />)
+  .add("tabscroller", () => <TabScroller />);
+
+storiesOf("Content Blocks", module)
+  .addDecorator((getStory) => (
+    <Screen style={[s.justify_center, s.align_stretch]}>{getStory()}</Screen>
+  ))
+  .add("image card", () => <ImageCard />)
+  .add("score block cards", () => <ScoreBlockCard />);
+
+storiesOf("Individual Components", module)
+  .addDecorator((getStory) => (
+    <Screen style={[s.justify_center, s.align_stretch]}>{getStory()}</Screen>
+  ))
   .add("primary button", () => <ButtonPrimary>Press Me</ButtonPrimary>)
   .add("secondary button", () => <ButtonSecondary>Press Me</ButtonSecondary>)
   .add("back button", () => (

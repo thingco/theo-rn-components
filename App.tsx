@@ -23,7 +23,7 @@ export default function App() {
     return null;
   } else {
     return (
-      <View style={[s.flex_1, s.pt_lg]}>
+      <View style={[s.flex_1]}>
         <StorybookUIRoot />
       </View>
     );
