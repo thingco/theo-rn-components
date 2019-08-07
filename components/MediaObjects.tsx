@@ -2,10 +2,10 @@ import React from "react";
 import { Image, View } from "react-native";
 import { BaseText as Text } from "./Base";
 import { ScoreMeter } from "./Meters";
-import { Icon } from "./Icon";
+import { Icon } from "./Icons";
 import s, { COLOUR_ORANGE } from "../Styles";
 
-export const MediaObject = ({
+const MediaObject = ({
   leftComponent,
   textComponent,
   rightComponent = null,

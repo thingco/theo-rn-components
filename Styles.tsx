@@ -33,6 +33,39 @@
 import { StyleSheet } from "react-native";
 
 /* ========================================================================== *\
+ * MANIPULATION FUNCTIONS
+\* ========================================================================== */
+
+function hexToRgbVector(hexValue) {
+  const [_, r, g, b] = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(
+    hexValue
+  );
+  return [parseInt(r, 16), parseInt(g, 16), parseInt(b, 16)];
+}
+
+function componentToHex(component) {
+  const hex = component.toString(16);
+  return hex.length === 1 ? `0${hex}` : hex;
+}
+
+function rgbVectorToHex([r, g, b]) {
+  return `#${componentToHex(r)}${componentToHex(g)}${componentToHex(b)}`;
+}
+
+function tintComponent(component, tintPercent) {
+  return Math.floor(component + (255 - component) * tintPercent);
+}
+
+function tintHex(hexValue, tintPercent) {
+  const [r, g, b] = hexToRgbVector(hexValue);
+  return rgbVectorToHex([
+    tintComponent(r, tintPercent),
+    tintComponent(g, tintPercent),
+    tintComponent(b, tintPercent),
+  ]);
+}
+
+/* ========================================================================== *\
  * CONSTANTS
 \* ========================================================================== */
 export const COLOUR_BLACK = "#000000";
@@ -44,6 +77,10 @@ export const COLOUR_WHITE = "#FFFFFF";
 
 export const COLOUR_ORANGE = "#FF6D37";
 export const COLOUR_YELLOW = "#f4c400";
+
+export const COLOUR_LIGHT_TINTED = tintHex(COLOUR_LIGHT, 0.5);
+export const COLOUR_ORANGE_TINTED = tintHex(COLOUR_ORANGE, 0.5);
+export const COLOUR_YELLOW_TINTED = tintHex(COLOUR_YELLOW, 0.5);
 
 export const FONT_BASE_FAMILY = "Bariol";
 // NOTE RN needs to load actual font variations as seperate fonts: one cannot
@@ -66,23 +103,6 @@ export const BORDER_RADIUS_BASE = 4;
 /* ========================================================================== *\
  * STYLES
 \* ========================================================================== */
-/**
- * The app renders a StorybookJS view. The following config object specifies,
- * in full, the styling for the React-Native storybook implementation.
- * This is undocumented functionality afaics, see this issue for details:
- *
- * https://github.com/storybookjs/storybook/issues/6605
- */
-export const storybookTheme = {
-  backgroundColor: COLOUR_DARK,
-  headerTextColor: COLOUR_WHITE,
-  labelColor: COLOUR_WHITE,
-  borderColor: COLOUR_LIGHT,
-  previewBorderColor: COLOUR_LIGHT,
-  buttonTextColor: COLOUR_GREY,
-  buttonActiveTextColor: COLOUR_WHITE,
-};
-
 /**
  * TODO: This is a bodge. react-native-svg does not allow setting SVG attributes
  * via styles: they must be passed as attributes. This makes the overall
@@ -109,6 +129,7 @@ export default StyleSheet.create({
   mid: { color: COLOUR_MID },
   light: { color: COLOUR_LIGHT },
   contrast: { color: COLOUR_ORANGE },
+  warning: { color: COLOUR_YELLOW },
   white: { color: COLOUR_WHITE },
   grey: { color: COLOUR_GREY },
   transparent: { color: "rgba(0, 0, 0, 0.0)" },
@@ -118,11 +139,18 @@ export default StyleSheet.create({
   bg_mid: { backgroundColor: COLOUR_MID },
   bg_light: { backgroundColor: COLOUR_LIGHT },
   bg_contrast: { backgroundColor: COLOUR_ORANGE },
+  bg_warning: { backgroundColor: COLOUR_YELLOW },
   bg_white: { backgroundColor: COLOUR_WHITE },
   bg_grey: { backgroundColor: COLOUR_GREY },
   bg_transparent: { backgroundColor: "rgba(0, 0, 0, 0.0)" },
 
+  bg_light_tinted: { backgroundColor: COLOUR_LIGHT_TINTED },
+  bg_contrast_tinted: { backgroundColor: COLOUR_ORANGE_TINTED },
+  bg_warning_tinted: { backgroundColor: COLOUR_YELLOW_TINTED },
+
   border_light: { borderColor: COLOUR_LIGHT },
+  border_contrast: { borderColor: COLOUR_ORANGE },
+  border_warning: { borderColor: COLOUR_YELLOW },
   border_transparent: { borderColor: "rgba(0, 0, 0, 0.0)" },
 
   /* -------------------------------------- *\
@@ -133,9 +161,18 @@ export default StyleSheet.create({
   p_sm: { padding: SPACING_SMALL },
   p_base: { padding: SPACING_BASE },
 
+  ph_xs: { paddingHorizontal: SPACING_XSMALL },
+  ph_sm: { paddingHorizontal: SPACING_SMALL },
+  ph_base: { paddingHorizontal: SPACING_BASE },
+
+  pv_xs: { paddingVertical: SPACING_XSMALL },
+  pv_sm: { paddingVertical: SPACING_SMALL },
+  pv_base: { paddingVertical: SPACING_BASE },
+
   pt_base: { paddingTop: SPACING_BASE },
   pt_lg: { paddingTop: SPACING_LARGE },
 
+  m_sm: { margin: SPACING_SMALL },
   mv_base: { marginVertical: SPACING_BASE },
 
   mb_base: { marginBottom: SPACING_BASE },
@@ -167,6 +204,9 @@ export default StyleSheet.create({
   text_centre: { textAlign: "center" },
   text_right: { textAlign: "right" },
 
+  spacing_half: { letterSpacing: 0.5 },
+  spacing_1: { letterSpacing: 1 },
+
   /* -------------------------------------- *\
    * LAYOUT
   \* -------------------------------------- */
@@ -180,6 +220,7 @@ export default StyleSheet.create({
   flex_row: { flexDirection: "row" },
   flex_col: { flexDirection: "column" },
 
+  flex_0: { flex: 0 },
   flex_1: { flex: 1 },
   flex_grow_1: { flexGrow: 1 },
 

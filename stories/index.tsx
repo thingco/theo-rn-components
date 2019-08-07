@@ -12,12 +12,15 @@ import {
   ButtonSecondary,
   BackButton,
   CloseButton,
-  Link,
-  LinkGroup,
-} from "../components/Controls";
+} from "../components/Buttons";
+
+import { Pill, PillOutlined, PillFaded } from "../components/Pills";
+
+import { Link, LinkGroup } from "../components/Links";
 
 import {
   Buttons,
+  Pills,
   ExampleProfile as Profile,
   ExampleTabs as Tabs,
   ExampleTabScroller as TabScroller,
@@ -37,6 +40,7 @@ storiesOf("UI Controls", module)
     <Screen style={[s.justify_center, s.align_stretch]}>{getStory()}</Screen>
   ))
   .add("buttons", () => <Buttons />)
+  .add("pills", () => <Pills />)
   .add("profile menu", () => <Profile />)
   .add("tabs", () => <Tabs />)
   .add("tabscroller", () => <TabScroller />);
@@ -50,7 +54,7 @@ storiesOf("Content Blocks", module)
 
 storiesOf("Individual Components", module)
   .addDecorator((getStory) => (
-    <Screen style={[s.justify_center, s.align_stretch]}>{getStory()}</Screen>
+    <Screen style={[s.justify_center, s.align_center]}>{getStory()}</Screen>
   ))
   .add("primary button", () => <ButtonPrimary>Press Me</ButtonPrimary>)
   .add("secondary button", () => <ButtonSecondary>Press Me</ButtonSecondary>)
@@ -60,6 +64,11 @@ storiesOf("Individual Components", module)
   .add("close button", () => (
     <CloseButton navigation={{ goBack: () => void 0 }} />
   ))
+  .add("pill", () => <Pill pillType="contrast">2</Pill>)
+  .add("outlined pill", () => (
+    <PillOutlined pillType="primary">Outlined pill</PillOutlined>
+  ))
+  .add("faded pill", () => <PillFaded pillType="primary">Faded Pill</PillFaded>)
   .add("link", () => <Link onPress={() => void 0}>I'm a link</Link>)
   .add("link group", () => (
     <LinkGroup

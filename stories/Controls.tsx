@@ -7,7 +7,8 @@ import {
   ButtonPrimary,
   ButtonSecondary,
   ButtonWarning,
-} from "../components/Controls";
+} from "../components/Buttons";
+import { Pill, PillOutlined, PillFaded } from "../components/Pills";
 import { ProfileMenu } from "../components/Profile";
 import { Tab, TabBar, TabPanel, TabSwitcher } from "../components/Tabs";
 import { Scroller, ScrollerPanel } from "../components/SwipeableTabs";
@@ -25,6 +26,26 @@ export const Buttons = () => (
     <ButtonWarning style={[s.mv_base]} onPress={dummyPress}>
       Warning Button
     </ButtonWarning>
+  </>
+);
+
+export const Pills = () => (
+  <>
+    <View style={[s.flex_row, s.justify_between, s.mb_base]}>
+      <Pill pillType="primary">Primary</Pill>
+      <Pill pillType="contrast">Secondary</Pill>
+      <Pill pillType="warning">Tertiary</Pill>
+    </View>
+    <View style={[s.flex_row, s.justify_between, s.mb_base]}>
+      <PillOutlined pillType="primary">Primary</PillOutlined>
+      <PillOutlined pillType="contrast">Secondary</PillOutlined>
+      <PillOutlined pillType="warning">Tertiary</PillOutlined>
+    </View>
+    <View style={[s.flex_row, s.justify_between, s.mb_base]}>
+      <PillFaded pillType="primary">Primary</PillFaded>
+      <PillFaded pillType="contrast">Secondary</PillFaded>
+      <PillFaded pillType="warning">Tertiary</PillFaded>
+    </View>
   </>
 );
 

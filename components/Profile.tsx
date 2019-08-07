@@ -1,7 +1,7 @@
 import React from "react";
 import { TouchableOpacity, View } from "react-native";
 import { BaseText as Text } from "./Base";
-import { Icon } from "./Icon";
+import { Icon } from "./Icons";
 
 import s, { COLOUR_LIGHT, COLOUR_WHITE } from "../Styles";
 
