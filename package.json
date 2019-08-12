@@ -13,7 +13,8 @@
   "author": "DanCouper <daniel.couper@thingco.com>",
   "license": "MIT",
   "scripts": {
-    "clone-to-root": "./scripts/clone-components.sh"
+    "clone-to-root": "./scripts/clone-components.sh",
+    "test": "0"
   },
   "peerDependencies": {
     "react": "^16.9.0",
