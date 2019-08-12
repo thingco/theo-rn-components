@@ -1,5 +1,5 @@
 {
-  "name": "theo-rn-components",
+  "name": "@thingco/theo-rn-components",
   "version": "0.1.0",
   "main": "dist/index.tsx",
   "types": "dist/index.d.ts",
@@ -7,6 +7,9 @@
     "dist/*"
   ],
   "repository": "git@github.com:thingco/theo-rn-components",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "author": "DanCouper <daniel.couper@thingco.com>",
   "license": "MIT",
   "scripts": {
