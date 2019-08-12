@@ -1,0 +1,61 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "rnstl & expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "prestorybook": "rnstl",
+    "storybook": "start-storybook -p 7007",
+    "test": "jest"
+  },
+  "dependencies": {
+    "expo": "^33.0.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-knobs": "^5.1.10",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/addon-notes": "^5.1.9",
+    "@storybook/addon-ondevice-knobs": "^5.1.10",
+    "@storybook/addon-storysource": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
+    "@storybook/react-native": "^5.1.9",
+    "@storybook/react-native-server": "^5.1.9",
+    "@storybook/theming": "^5.1.9",
+    "@types/expo": "^32.0.13",
+    "@types/node": "^12.7.1",
+    "@types/react": "^16.8.25",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-react-native-web": "^0.11.4",
+    "babel-preset-expo": "^5.1.1",
+    "expo-font": "~5.0.1",
+    "i18n-js": "^3.3.0",
+    "jest-expo": "^33.0.2",
+    "react": "16.8.3",
+    "react-dom": "^16.8.6",
+    "react-native-localize": "^1.1.4",
+    "react-native-modal": "^11.1.0",
+    "react-native-storybook-loader": "^1.8.0",
+    "react-native-svg": "~9.4.0",
+    "react-native-svg-transformer": "^0.13.0",
+    "react-native-swipe-gestures": "^1.0.3",
+    "react-native-web": "^0.11.4",
+    "react-spring": "^8.0.27",
+    "react-test-renderer": "^16.8.6",
+    "typescript": "^3.5.3"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./components"
+      ],
+      "pattern": "**/*.story.tsx"
+    }
+  },
+  "private": true
+}

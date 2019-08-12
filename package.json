@@ -1,48 +1,31 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
+  "name": "theo-rn-components",
+  "version": "0.1.0",
+  "main": "dist/index.tsx",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "repository": "git@github.com:thingco/theo-rn-components",
+  "author": "DanCouper <daniel.couper@thingco.com>",
+  "license": "MIT",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject",
-    "storybook": "start-storybook -p 7007",
-    "test": "jest"
+    "clone-to-root": "./scripts/clone-components.sh"
   },
-  "dependencies": {
-    "@types/expo": "^32.0.13",
-    "@types/react-native": "^0.60.3",
-    "expo": "^33.0.0",
-    "expo-font": "~5.0.1",
-    "i18n-js": "^3.3.0",
-    "react": "16.8.3",
-    "react-dom": "^16.8.6",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
-    "react-native-localize": "^1.1.4",
-    "react-native-modal": "^11.1.0",
-    "react-native-svg": "~9.4.0",
-    "react-native-swipe-gestures": "^1.0.3",
-    "react-native-web": "^0.11.4",
-    "react-spring": "^8.0.27",
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-native": "^0.60.4",
+    "react-native-svg": "^9.6.2",
     "typescript": "^3.5.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@storybook/addon-actions": "^5.1.9",
-    "@storybook/addon-links": "^5.1.9",
-    "@storybook/addon-notes": "^5.1.9",
-    "@storybook/addon-storysource": "^5.1.9",
-    "@storybook/addons": "^5.1.9",
-    "@storybook/react": "^5.1.9",
-    "@storybook/react-native": "^5.1.9",
-    "@storybook/react-native-server": "^5.1.9",
-    "@storybook/theming": "^5.1.9",
-    "babel-loader": "^8.0.6",
-    "babel-plugin-react-native-web": "^0.11.4",
-    "babel-preset-expo": "^5.1.1",
-    "jest-expo": "^33.0.2",
-    "react-native-svg-transformer": "^0.13.0",
-    "react-test-renderer": "^16.8.6"
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "husky": "^3.0.3"
   },
-  "private": true
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
 }
