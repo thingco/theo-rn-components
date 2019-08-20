@@ -1,0 +1,23 @@
+{
+  "app.js": "/static/js/bundle.js",
+  "app.332293c007536e571311.map": "/332293c007536e571311.map",
+  "fonts/AntDesign.ttf": "/./fonts/AntDesign.ttf",
+  "fonts/BariolBold.ttf": "/./fonts/BariolBold.ttf",
+  "fonts/BariolRegular.ttf": "/./fonts/BariolRegular.ttf",
+  "fonts/Entypo.ttf": "/./fonts/Entypo.ttf",
+  "fonts/Feather.ttf": "/./fonts/Feather.ttf",
+  "fonts/FontAwesome.ttf": "/./fonts/FontAwesome.ttf",
+  "fonts/FontAwesome5_Brands.ttf": "/./fonts/FontAwesome5_Brands.ttf",
+  "fonts/FontAwesome5_Solid.ttf": "/./fonts/FontAwesome5_Solid.ttf",
+  "fonts/Foundation.ttf": "/./fonts/Foundation.ttf",
+  "fonts/Ionicons.ttf": "/./fonts/Ionicons.ttf",
+  "fonts/MaterialCommunityIcons.ttf": "/./fonts/MaterialCommunityIcons.ttf",
+  "fonts/MaterialIcons.ttf": "/./fonts/MaterialIcons.ttf",
+  "fonts/SimpleLineIcons.ttf": "/./fonts/SimpleLineIcons.ttf",
+  "index.html": "/index.html",
+  "manifest.json": "/manifest.json",
+  "precache-manifest.60144109bbe17651b1eb050c29e4f6f4.js": "/precache-manifest.60144109bbe17651b1eb050c29e4f6f4.js",
+  "service-worker.js": "/service-worker.js",
+  "static/media/color-circle.png": "/static/media/color-circle.fb8bbc26.png",
+  "static/media/hsv_triangle_mask.png": "/static/media/hsv_triangle_mask.9d4466bc.png"
+}
