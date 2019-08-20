@@ -1,7 +1,7 @@
 {
   "name": "@thingco/theo-rn-components",
-  "version": "0.1.0",
-  "main": "dist/index.tsx",
+  "version": "0.2.0",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist/*"
@@ -13,8 +13,10 @@
   "author": "DanCouper <daniel.couper@thingco.com>",
   "license": "MIT",
   "scripts": {
-    "clone-to-root": "./scripts/clone-components.sh",
-    "test": "0"
+    "clean": "rm -rf dist/",
+    "compile": "tsc",
+    "build": "yarn clean && yarn compile && npm version patch && git add .",
+    "push-release": "git push && git push --tags"
   },
   "peerDependencies": {
     "react": "^16.9.0",
@@ -25,7 +27,8 @@
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
-    "husky": "^3.0.3"
+    "husky": "^3.0.3",
+    "typescript": "^3.5.3"
   },
   "husky": {
     "hooks": {

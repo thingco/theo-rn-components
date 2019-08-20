@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Date renders correctly 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Bariol",
+      },
+      Object {
+        "fontSize": 16,
+      },
+      undefined,
+    ]
+  }
+>
+  08/13/2019
+</Text>
+`;
+
+exports[`Time renders correctly 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Bariol",
+      },
+      Object {
+        "fontSize": 16,
+      },
+      undefined,
+    ]
+  }
+>
+  15:24
+</Text>
+`;

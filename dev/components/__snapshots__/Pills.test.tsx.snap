@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Normal pill renders correctly 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Bariol",
+      },
+      Object {
+        "fontSize": 16,
+      },
+      Array [
+        Object {
+          "fontFamily": "BariolBold",
+        },
+        Object {
+          "fontSize": 14,
+        },
+        Object {
+          "fontWeight": "bold",
+        },
+        Object {
+          "overflow": "hidden",
+        },
+        Object {
+          "paddingVertical": 4,
+        },
+        Object {
+          "paddingHorizontal": 16,
+        },
+        Object {
+          "letterSpacing": 0.5,
+        },
+        Object {
+          "textAlign": "center",
+        },
+        Object {
+          "borderRadius": 14,
+        },
+        Object {
+          "color": "#FFFFFF",
+        },
+        Object {
+          "backgroundColor": "#19988B",
+        },
+        undefined,
+      ],
+    ]
+  }
+>
+  I'm a pill!
+</Text>
+`;
+
+exports[`Outline pill renders correctly 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Bariol",
+      },
+      Object {
+        "fontSize": 16,
+      },
+      Array [
+        Object {
+          "fontFamily": "BariolBold",
+        },
+        Object {
+          "fontSize": 14,
+        },
+        Object {
+          "fontWeight": "bold",
+        },
+        Object {
+          "overflow": "hidden",
+        },
+        Object {
+          "paddingVertical": 4,
+        },
+        Object {
+          "paddingHorizontal": 16,
+        },
+        Object {
+          "letterSpacing": 0.5,
+        },
+        Object {
+          "textAlign": "center",
+        },
+        Object {
+          "borderRadius": 14,
+        },
+        Object {
+          "borderWidth": 2,
+        },
+        Object {
+          "color": "#FF6D37",
+        },
+        Object {
+          "borderColor": "#FF6D37",
+        },
+        undefined,
+      ],
+    ]
+  }
+>
+  I'm a pill!
+</Text>
+`;
+
+exports[`Tinted pill renders correctly 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Bariol",
+      },
+      Object {
+        "fontSize": 16,
+      },
+      Array [
+        Object {
+          "fontFamily": "BariolBold",
+        },
+        Object {
+          "fontSize": 14,
+        },
+        Object {
+          "fontWeight": "bold",
+        },
+        Object {
+          "overflow": "hidden",
+        },
+        Object {
+          "paddingVertical": 4,
+        },
+        Object {
+          "paddingHorizontal": 16,
+        },
+        Object {
+          "letterSpacing": 0.5,
+        },
+        Object {
+          "textAlign": "center",
+        },
+        Object {
+          "borderRadius": 14,
+        },
+        Object {
+          "color": "#003E52",
+        },
+        Object {
+          "backgroundColor": "#f9e17f",
+        },
+        undefined,
+      ],
+    ]
+  }
+>
+  I'm a pill!
+</Text>
+`;

@@ -1,0 +1,17 @@
+import React from "react";
+import Svg, { Path, SvgProps } from "react-native-svg";
+
+const SvgForward = ({ color, ...props }: { color: string } & SvgProps) => (
+  <Svg viewBox="0 0 64 64" {...props}>
+    <Path
+      fill="none"
+      stroke={color}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={3}
+      d="M28 12L48 32 28 52"
+    />
+  </Svg>
+);
+
+export default SvgForward;

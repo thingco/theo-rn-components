@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Distance renders correctly for imperial 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Bariol",
+      },
+      Object {
+        "fontSize": 16,
+      },
+      undefined,
+    ]
+  }
+>
+  26
+  mi
+</Text>
+`;
+
+exports[`Distance renders correctly for metric 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Bariol",
+      },
+      Object {
+        "fontSize": 16,
+      },
+      undefined,
+    ]
+  }
+>
+  42.0
+  km
+</Text>
+`;
+
+exports[`Speed renders correctly for imperial 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Bariol",
+      },
+      Object {
+        "fontSize": 16,
+      },
+      undefined,
+    ]
+  }
+>
+  52.2
+  mph
+</Text>
+`;
+
+exports[`Speed renders correctly for metric 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Bariol",
+      },
+      Object {
+        "fontSize": 16,
+      },
+      undefined,
+    ]
+  }
+>
+  84.00
+  kmph
+</Text>
+`;

@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders correctly 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#19988B",
+      "borderRadius": 4,
+      "justifyContent": "center",
+      "minHeight": 55,
+      "opacity": 1,
+      "paddingHorizontal": 24,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Bariol",
+        },
+        Object {
+          "fontSize": 16,
+        },
+        Array [
+          Object {
+            "color": "#FFFFFF",
+          },
+          Object {
+            "textAlign": "center",
+          },
+          Object {
+            "fontSize": 18,
+          },
+          Object {
+            "fontFamily": "BariolBold",
+          },
+        ],
+      ]
+    }
+  >
+    I'm a button!
+  </Text>
+</View>
+`;
