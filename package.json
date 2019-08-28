@@ -7,16 +7,15 @@
     "dist/*"
   ],
   "repository": "git@github.com:thingco/theo-rn-components",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
+  "homepage": "https://thingco.github.io/theo-rn-components",
   "author": "DanCouper <daniel.couper@thingco.com>",
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf dist/",
     "compile": "tsc",
-    "build": "yarn clean && yarn compile && npm version patch && git add .",
-    "push-release": "git push && git push --tags"
+    "build": "yarn clean && yarn compile",
+    "deploy": "gh-pages -d dev/web-build",
+    "predeploy": "cd dev && expo build:web"
   },
   "peerDependencies": {
     "react": "^16.9.0",
@@ -27,6 +26,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
+    "gh-pages": "^2.1.1",
     "husky": "^3.0.3",
     "typescript": "^3.5.3"
   },
