@@ -13,6 +13,7 @@
   "scripts": {
     "clean": "rm -rf dist/",
     "compile": "tsc",
+    "compile:local": "yarn build && yarn pack",
     "build": "yarn clean && yarn compile",
     "deploy": "gh-pages -d dev/web-build",
     "predeploy": "cd dev && expo build:web"
