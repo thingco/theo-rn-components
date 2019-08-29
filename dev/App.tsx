@@ -10,8 +10,8 @@ export default function App() {
   React.useEffect(() => {
     const loadFont = async () => {
       await Font.loadAsync({
-        Bariol: require("./assets/fonts/BariolRegular.ttf"),
-        BariolBold: require("./assets/fonts/BariolBold.ttf"),
+        "Bariol-Bold": require("./assets/fonts/Bariol-Bold.ttf"),
+        "Bariol-Regular": require("./assets/fonts/Bariol-Regular.ttf"),
       });
       setFontLoaded(true);
     };
