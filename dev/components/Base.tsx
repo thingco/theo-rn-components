@@ -11,7 +11,7 @@ import s from "./Styles";
 
 type ScreenProps = {
   children: React.ReactNode;
-  style: StyleProp<ViewStyle>;
+  style?: StyleProp<ViewStyle>;
 };
 
 const Screen: React.FC<ScreenProps> = (props: ScreenProps) => (
