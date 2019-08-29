@@ -1,1 +1,1 @@
-{"version":3,"file":"Forward.d.ts","sourceRoot":"","sources":["../../../theo-styleguide/components/icons/Forward.tsx"],"names":[],"mappings":"AACA,OAAY,EAAQ,QAAQ,EAAE,MAAM,kBAAkB,CAAC;AAEvD,QAAA,MAAM,UAAU;;4BAWf,CAAC;AAEF,eAAe,UAAU,CAAC"}
+{"version":3,"file":"Forward.d.ts","sourceRoot":"","sources":["../../../dev/components/icons/Forward.tsx"],"names":[],"mappings":"AACA,OAAY,EAAQ,QAAQ,EAAE,MAAM,kBAAkB,CAAC;AAEvD,QAAA,MAAM,UAAU;;4BAWf,CAAC;AAEF,eAAe,UAAU,CAAC"}

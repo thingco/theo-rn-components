@@ -24,9 +24,9 @@ const PreferencesProvider = ({ children, }) => {
     </StateContext.Provider>);
 };
 function usePreferences() {
-    const context = React.useContext(StateContext);
+    const preferences = React.useContext(StateContext);
     // tslint:disable:triple-equals
-    if (context == undefined) {
+    if (preferences == undefined) {
         // tslint:disable:no-console
         console.warn(`
 The usePreferences hook should be used within a PreferencesProvider.
@@ -39,6 +39,7 @@ component tree.
     `);
         return defaultPreferences;
     }
+    return preferences;
 }
 function usePreferencesUpdater() {
     const updatePreferences = React.useContext(DispatchContext);

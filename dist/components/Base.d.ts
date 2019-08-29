@@ -2,7 +2,7 @@ import React from "react";
 import { ViewStyle, TextStyle, StyleProp } from "react-native";
 declare type ScreenProps = {
     children: React.ReactNode;
-    style: StyleProp<ViewStyle>;
+    style?: StyleProp<ViewStyle>;
 };
 declare const Screen: React.FC<ScreenProps>;
 declare type TextProps = {

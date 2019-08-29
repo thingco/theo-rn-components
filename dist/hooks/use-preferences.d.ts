@@ -16,7 +16,7 @@ declare type PreferencesProviderProps = {
     children: React.ReactNode;
 };
 declare const PreferencesProvider: React.FC<PreferencesProviderProps>;
-declare function usePreferences(): Preferences | undefined;
+declare function usePreferences(): Preferences;
 declare function usePreferencesUpdater(): UpdatePreferences;
 export { PreferencesProvider, usePreferences, usePreferencesUpdater };
 //# sourceMappingURL=use-preferences.d.ts.map

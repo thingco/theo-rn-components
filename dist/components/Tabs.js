@@ -3,6 +3,11 @@ import { TouchableOpacity, View } from "react-native";
 import { Text } from "./Base";
 import s from "./Styles";
 const TabContext = React.createContext({});
+/**
+ * The context provider component for a tab interface.
+ *
+ * @param {TabSwitcherProps} props
+ */
 const TabSwitcher = ({ children, initialTab, ...props }) => {
     const [selectedTab, setSelectedTab] = React.useState(initialTab);
     return (<TabContext.Provider value={{ selectedTab, setSelectedTab }}>

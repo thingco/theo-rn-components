@@ -36,6 +36,8 @@ function scoreColour(score) {
         case score <= 100:
             return COLOUR_LIGHT;
         default:
+            // NOTE default case included to prevent compiler screaming about
+            // possible no return value for the function.
             throw new InvalidScoreError();
     }
 }

@@ -1,1 +1,1 @@
-{"version":3,"file":"use-dimensions.d.ts","sourceRoot":"","sources":["../../theo-styleguide/hooks/use-dimensions.tsx"],"names":[],"mappings":"AAGA,eAAO,MAAM,aAAa;;;CAIzB,CAAC"}
+{"version":3,"file":"use-dimensions.d.ts","sourceRoot":"","sources":["../../dev/hooks/use-dimensions.tsx"],"names":[],"mappings":"AAGA,eAAO,MAAM,aAAa;;;CAIzB,CAAC"}

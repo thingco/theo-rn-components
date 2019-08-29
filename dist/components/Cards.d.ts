@@ -8,7 +8,7 @@ declare type ImageCardProps = {
 declare const ImageCard: React.FC<ImageCardProps>;
 declare type BlockCardProps = {
     score: number;
-    totalDistance: string;
+    totalDistance: number;
     journeysCompleted: number;
     dateCompleted: string;
     style?: StyleProp<ViewStyle>;

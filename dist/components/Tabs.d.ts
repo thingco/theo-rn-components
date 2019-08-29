@@ -9,6 +9,11 @@ declare type TabSwitcherProps = {
     };
     style?: StyleProp<ViewStyle>;
 };
+/**
+ * The context provider component for a tab interface.
+ *
+ * @param {TabSwitcherProps} props
+ */
 declare const TabSwitcher: React.FC<TabSwitcherProps>;
 declare type TabBarProps = {
     children: {

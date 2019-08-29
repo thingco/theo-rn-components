@@ -1,1 +1,1 @@
-{"version":3,"file":"Lock.d.ts","sourceRoot":"","sources":["../../../theo-styleguide/components/icons/Lock.tsx"],"names":[],"mappings":"AACA,OAAY,EAAgB,QAAQ,EAAE,MAAM,kBAAkB,CAAC;AAE/D,QAAA,MAAM,OAAO;;4BAgCZ,CAAC;AAEF,eAAe,OAAO,CAAC"}
+{"version":3,"file":"Lock.d.ts","sourceRoot":"","sources":["../../../dev/components/icons/Lock.tsx"],"names":[],"mappings":"AACA,OAAY,EAAgB,QAAQ,EAAE,MAAM,kBAAkB,CAAC;AAE/D,QAAA,MAAM,OAAO;;4BAgCZ,CAAC;AAEF,eAAe,OAAO,CAAC"}

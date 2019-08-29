@@ -42,10 +42,10 @@ export const COLOUR_YELLOW = "#f4c400";
 export const COLOUR_LIGHT_TINTED = tintHex(COLOUR_LIGHT, 0.5);
 export const COLOUR_ORANGE_TINTED = tintHex(COLOUR_ORANGE, 0.5);
 export const COLOUR_YELLOW_TINTED = tintHex(COLOUR_YELLOW, 0.5);
-export const FONT_BASE_FAMILY = "Bariol";
+export const FONT_BASE_FAMILY = "Bariol-Regular";
 // NOTE Expo needs to load actual font variations as seperate fonts: one cannot
 // simply load bold/italic/etc versions then set weight to bold/italic/etc.
-export const FONT_BASE_FAMILY_BOLD = "BariolBold";
+export const FONT_BASE_FAMILY_BOLD = "Bariol-Bold";
 export const FONT_SIZE_SMALL = 14;
 export const FONT_SIZE_BASE = 16;
 export const FONT_SIZE_LARGE = 18;
