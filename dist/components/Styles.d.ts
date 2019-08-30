@@ -106,6 +106,9 @@ declare const _default: {
     p_base: {
         padding: number;
     };
+    p_lg: {
+        padding: number;
+    };
     ph_xs: {
         paddingHorizontal: number;
     };
@@ -136,8 +139,17 @@ declare const _default: {
     m_sm: {
         margin: number;
     };
+    m_base: {
+        margin: number;
+    };
     mv_base: {
         marginVertical: number;
+    };
+    mb_xs: {
+        marginBottom: number;
+    };
+    mb_sm: {
+        marginBottom: number;
     };
     mb_base: {
         marginBottom: number;
@@ -167,6 +179,9 @@ declare const _default: {
         fontSize: number;
     };
     text_xl: {
+        fontSize: number;
+    };
+    text_xxl: {
         fontSize: number;
     };
     bold: {
@@ -243,6 +258,34 @@ declare const _default: {
     };
     min_button_height: {
         minHeight: number;
+    };
+    punchcut_sm: {
+        backgroundColor: string;
+        borderRadius: number;
+        height: number;
+        left: number;
+        position: "absolute";
+        width: number;
+    };
+    punchcut_sm_top: {
+        top: number;
+    };
+    punchcut_sm_bottom: {
+        bottom: number;
+    };
+    punchcut_lg: {
+        backgroundColor: string;
+        borderRadius: number;
+        height: number;
+        position: "absolute";
+        top: number;
+        width: number;
+    };
+    punchcut_lg_left: {
+        left: number;
+    };
+    punchcut_lg_right: {
+        right: number;
     };
 };
 /**

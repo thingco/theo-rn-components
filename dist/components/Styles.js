@@ -107,20 +107,31 @@ export default StyleSheet.create({
     /* -------------------------------------- *\
      * SPACING
     \* -------------------------------------- */
+    // Padding, all sides:
     p_xs: { padding: SPACING_XSMALL },
     p_sm: { padding: SPACING_SMALL },
     p_base: { padding: SPACING_BASE },
+    p_lg: { padding: SPACING_LARGE },
+    // Padding, horizontal (left and right):
     ph_xs: { paddingHorizontal: SPACING_XSMALL },
     ph_sm: { paddingHorizontal: SPACING_SMALL },
     ph_base: { paddingHorizontal: SPACING_BASE },
     ph_lg: { paddingHorizontal: SPACING_LARGE },
+    // Padding, vertical (top and bottom):
     pv_xs: { paddingVertical: SPACING_XSMALL },
     pv_sm: { paddingVertical: SPACING_SMALL },
     pv_base: { paddingVertical: SPACING_BASE },
+    // Padding, specific sides (t: top, r: right, b: bottom, l: left)
     pt_base: { paddingTop: SPACING_BASE },
     pt_lg: { paddingTop: SPACING_LARGE },
+    // Margin, all sides:
     m_sm: { margin: SPACING_SMALL },
+    m_base: { margin: SPACING_BASE },
+    // Margin, vertical (top and bottom):
     mv_base: { marginVertical: SPACING_BASE },
+    // Margin, specific sides (t: top, r: right, b: bottom, l: left)
+    mb_xs: { marginBottom: SPACING_XSMALL },
+    mb_sm: { marginBottom: SPACING_SMALL },
     mb_base: { marginBottom: SPACING_BASE },
     /* -------------------------------------- *\
      * BORDERS
@@ -137,6 +148,7 @@ export default StyleSheet.create({
     text_base: { fontSize: FONT_SIZE_BASE },
     text_lg: { fontSize: FONT_SIZE_LARGE },
     text_xl: { fontSize: FONT_SIZE_XLARGE },
+    text_xxl: { fontSize: FONT_SIZE_XXLARGE },
     bold: { fontWeight: "bold" },
     underline: { textDecorationLine: "underline" },
     text_left: { textAlign: "left" },
@@ -171,5 +183,28 @@ export default StyleSheet.create({
     img_thumb_height: { height: 100 },
     img_thumb_width: { width: 100 },
     min_button_height: { minHeight: 55 },
+    /* -------------------------------------- *\
+     * SPEZIAL
+    \* -------------------------------------- */
+    punchcut_sm: {
+        backgroundColor: COLOUR_DARK,
+        borderRadius: SPACING_SMALL,
+        height: SPACING_BASE,
+        left: 92,
+        position: "absolute",
+        width: SPACING_BASE,
+    },
+    punchcut_sm_top: { top: 0 - SPACING_SMALL },
+    punchcut_sm_bottom: { bottom: 0 - SPACING_SMALL },
+    punchcut_lg: {
+        backgroundColor: COLOUR_DARK,
+        borderRadius: SPACING_LARGE,
+        height: SPACING_LARGE * 2,
+        position: "absolute",
+        top: 0 - SPACING_LARGE,
+        width: SPACING_LARGE * 2,
+    },
+    punchcut_lg_left: { left: 0 - SPACING_LARGE },
+    punchcut_lg_right: { right: 0 - SPACING_LARGE },
 });
 //# sourceMappingURL=Styles.js.map

@@ -1,11 +1,26 @@
 # Changelog
-# Changelog
 
-## [Unreleased]
+
+## [0.4.0] - 2019-08-29
+
+### Added
+
+- Add RewardCard/FullScreenRewardCard + styling
+- Add stories for above.
+- Add special styling for elements used to produce a "punchcut" visual effect on
+  reward cards. 
 
 ### Changed
 
-- Shuffle around the project structure so that it's a bit more sensible.
+- Change Link component API (BREAKING CHANGE): RN's `Linking` module now used
+  directly, so the component needs to be passed a string URL instead of a callback.
+- Change ImageCard component API (BREAKING CHANGE): To allow for flexibility,
+  the `sourceUrl` prop has been changed to `source`, and accepts the same parameter
+  as the RN `Image` component.
+
+### Removed
+
+- Remove padding from Screen component (this should be handled by child components)
 
 
 ## [0.3.0] - 2019-08-20

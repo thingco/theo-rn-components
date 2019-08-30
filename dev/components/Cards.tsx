@@ -135,8 +135,8 @@ type RewardCardFullScreenProps = {
   title: string;
   terms?: string;
   description: string;
-  code?: string;
-  codeType?: RewardCodeType;
+  code: string;
+  codeType: RewardCodeType;
   partner: string;
   style?: StyleProp<ViewStyle>;
 };

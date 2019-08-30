@@ -2,7 +2,7 @@ import React from "react";
 import { TextStyle, StyleProp } from "react-native";
 declare type LinkProps = {
     children: React.ReactNode;
-    onPress: () => void;
+    url: string;
     style?: StyleProp<TextStyle>;
 };
 /** External links and groups of links, styled like standard HTML w/underline: */
