@@ -15,7 +15,7 @@ type ScreenProps = {
 };
 
 const Screen: React.FC<ScreenProps> = (props: ScreenProps) => (
-  <View style={[s.flex_1, s.bg_dark, s.p_base, s.pt_lg, props.style]}>
+  <View style={[s.flex_1, s.bg_dark, s.pv_base, s.pt_lg, props.style]}>
     {props.children}
   </View>
 );
