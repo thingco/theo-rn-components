@@ -11,6 +11,7 @@ function loadStories() {
   require("../components/IconButtons.story");
   require("../components/Links.story");
   require("../components/Pills.story");
+  require("../components/Tabs.story");
   require("../components/_storybook/Welcome.story");
 }
 
@@ -22,6 +23,7 @@ const stories = [
   "../components/IconButtons.story",
   "../components/Links.story",
   "../components/Pills.story",
+  "../components/Tabs.story",
   "../components/_storybook/Welcome.story",
 ];
 
