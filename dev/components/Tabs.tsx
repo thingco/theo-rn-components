@@ -13,7 +13,7 @@ type TabContextValue = {
 
 const TabContext = React.createContext<TabContextValue>({} as TabContextValue);
 
-function useTabContext () {
+function useTabContext() {
   const tabContext = React.useContext(TabContext);
 
   if (tabContext == undefined) {
@@ -30,7 +30,7 @@ type TabSwitcherProps = {
   initialTab: CurrentTabName;
   children: {
     TabBar: React.ReactNode;
-    TabPanel: React.ReactNode;
+    TabPanel: React.ReactNode[];
   };
   style?: StyleProp<ViewStyle>;
 };
@@ -56,7 +56,7 @@ const TabSwitcher: React.FC<TabSwitcherProps> = ({
 
 type TabBarProps = {
   children: {
-    Tab: React.ReactNode;
+    Tab: React.ReactNode[];
   };
   style?: StyleProp<ViewStyle>;
 };
@@ -108,7 +108,7 @@ const Tab: React.FC<TabProps> = ({ children, name }: TabProps) => {
 };
 
 type TabPanelProps = {
-  children: React.ReactNode;
+  children: React.ReactNode[];
   name: CurrentTabName;
   style?: StyleProp<ViewStyle>;
 };
