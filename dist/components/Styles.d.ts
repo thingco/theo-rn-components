@@ -20,6 +20,7 @@ export declare const SPACING_XSMALL = 4;
 export declare const SPACING_SMALL = 8;
 export declare const SPACING_BASE = 16;
 export declare const SPACING_LARGE = 24;
+export declare const NAV_BUTTON_WIDTH = 60;
 export declare const BORDER_RADIUS_BASE = 4;
 declare const _default: {
     black: {
@@ -258,6 +259,9 @@ declare const _default: {
     };
     min_button_height: {
         minHeight: number;
+    };
+    nav_button_width: {
+        width: number;
     };
     punchcut_sm: {
         backgroundColor: string;

@@ -5,7 +5,7 @@ declare type TabSwitcherProps = {
     initialTab: CurrentTabName;
     children: {
         TabBar: React.ReactNode;
-        TabPanel: React.ReactNode;
+        TabPanel: React.ReactNode[];
     };
     style?: StyleProp<ViewStyle>;
 };
@@ -17,7 +17,7 @@ declare type TabSwitcherProps = {
 declare const TabSwitcher: React.FC<TabSwitcherProps>;
 declare type TabBarProps = {
     children: {
-        Tab: React.ReactNode;
+        Tab: React.ReactNode[];
     };
     style?: StyleProp<ViewStyle>;
 };
@@ -37,7 +37,7 @@ declare type TabProps = {
  */
 declare const Tab: React.FC<TabProps>;
 declare type TabPanelProps = {
-    children: React.ReactNode;
+    children: React.ReactNode[];
     name: CurrentTabName;
     style?: StyleProp<ViewStyle>;
 };

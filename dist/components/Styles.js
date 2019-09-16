@@ -55,6 +55,7 @@ export const SPACING_XSMALL = 4;
 export const SPACING_SMALL = 8;
 export const SPACING_BASE = 16;
 export const SPACING_LARGE = 24;
+export const NAV_BUTTON_WIDTH = 60;
 export const BORDER_RADIUS_BASE = 4;
 /* ========================================================================== *\
  * STYLES
@@ -183,6 +184,7 @@ export default StyleSheet.create({
     img_thumb_height: { height: 100 },
     img_thumb_width: { width: 100 },
     min_button_height: { minHeight: 55 },
+    nav_button_width: { width: NAV_BUTTON_WIDTH },
     /* -------------------------------------- *\
      * SPEZIAL
     \* -------------------------------------- */
