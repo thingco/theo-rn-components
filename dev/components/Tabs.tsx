@@ -30,7 +30,7 @@ type TabSwitcherProps = {
   initialTab: CurrentTabName;
   children: {
     TabBar: React.ReactNode;
-    TabPanel: React.ReactNode[];
+    TabPanel: React.ReactNode;
   };
   style?: StyleProp<ViewStyle>;
 };
@@ -56,7 +56,7 @@ const TabSwitcher: React.FC<TabSwitcherProps> = ({
 
 type TabBarProps = {
   children: {
-    Tab: React.ReactNode[];
+    Tab: React.ReactNode;
   };
   style?: StyleProp<ViewStyle>;
 };
