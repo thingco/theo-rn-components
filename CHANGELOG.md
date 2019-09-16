@@ -9,9 +9,11 @@
 - Add stories for above.
 - Add special styling for elements used to produce a "punchcut" visual effect on
   reward cards. 
+- Add NavIconButton, NavTextButton and NavSpacer components to the NavButtons file.
 
 ### Changed
 
+- Iconbuttons -> NavButtons
 - Change Link component API (BREAKING CHANGE): RN's `Linking` module now used
   directly, so the component needs to be passed a string URL instead of a callback.
 - Change ImageCard component API (BREAKING CHANGE): To allow for flexibility,
