@@ -8,8 +8,9 @@ function loadStories() {
   require("../components/Cards.story");
   require("../components/DateTime.story");
   require("../components/Quantities.story");
-  require("../components/IconButtons.story");
   require("../components/Links.story");
+  require("../components/Nav.story");
+  require("../components/NavButtons.story");
   require("../components/Pills.story");
   require("../components/Tabs.story");
   require("../components/_storybook/Welcome.story");
@@ -20,8 +21,9 @@ const stories = [
   "../components/Cards.story",
   "../components/DateTime.story",
   "../components/Quantities.story",
-  "../components/IconButtons.story",
   "../components/Links.story",
+  "../components/Nav.story",
+  "../components/NavButtons.story",
   "../components/Pills.story",
   "../components/Tabs.story",
   "../components/_storybook/Welcome.story",

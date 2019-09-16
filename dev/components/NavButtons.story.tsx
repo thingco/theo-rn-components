@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react-native";
 import { withKnobs, select, number } from "@storybook/addon-knobs";
 
 import { Screen } from "./Base";
-import { IconButton } from "./IconButtons";
+import { IconButton } from "./NavButtons";
 import s, {
   COLOUR_LIGHT,
   COLOUR_WHITE,

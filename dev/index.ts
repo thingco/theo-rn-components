@@ -4,7 +4,7 @@ export * from "./components/Base";
 export * from "./components/Buttons";
 export * from "./components/Cards";
 export * from "./components/DateTime";
-export * from "./components/IconButtons";
+export * from "./components/NavButtons";
 export * from "./components/Links";
 export * from "./components/Pills";
 export * from "./components/Quantities";
