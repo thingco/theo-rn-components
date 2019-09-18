@@ -4,7 +4,7 @@ import { Text } from "./Base";
 import s, { FONT_SIZE_SMALL } from "./Styles";
 import { TextStyle, StyleProp } from "react-native";
 
-type PillType = "primary" | "contrast" | "warning";
+export type PillType = "primary" | "contrast" | "warning";
 
 type PillProps = {
   children: React.ReactNode;

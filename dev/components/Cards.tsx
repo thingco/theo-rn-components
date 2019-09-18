@@ -8,11 +8,13 @@ import {
   ImageSourcePropType,
   Linking,
 } from "react-native";
-import { Text } from "./Base";
 import { Button } from "./Buttons";
-import { ScoreMeter } from "./Meters";
+import { FormattedDate, FormattedTime } from "./DateTime";
 import { Icon } from "./Icons";
 import { Link } from "./Links";
+import { PillTinted, PillType } from "./Pills";
+import { ScoreMeter } from "./Meters";
+import { Text } from "./Base";
 import s, { COLOUR_ORANGE } from "./Styles";
 
 type MediaObjectProps = {
@@ -275,4 +277,45 @@ const BlockCard: React.FC<BlockCardProps> = ({
   />
 );
 
-export { BlockCard, ImageCard, RewardCard, RewardCardFullScreen };
+/**
+ * An extension of the media object component for displaying an overview of a
+ * video.
+ */
+
+type VideoCardProps = {
+  style?: StyleProp<ViewStyle>;
+  timestamp: number;
+  statusType: PillType;
+  statusText: string;
+};
+
+const VideoCard: React.FC<VideoCardProps> = ({
+  timestamp,
+  statusType,
+  statusText,
+  ...props
+}) => (
+  <MediaObject
+    style={props.style}
+    leftComponent={
+      <View
+        style={[s.p_xs, s.img_thumb_width, s.align_self_stretch, s.bg_mid]}
+      />
+    }
+    textComponent={
+      <React.Fragment>
+        <Text style={[s.text_sm, s.dark, s.mb_xs]}>
+          <FormattedDate style={[s.text_sm]} timestamp={timestamp} /> at{" "}
+          <FormattedTime style={[s.text_sm]} timestamp={timestamp} />
+        </Text>
+        {/* FIXME(@DanCouper) need to be able to get the location */}
+        <Text style={[s.base_font_bold, s.dark, s.mb_base]}>
+          STUB: LOCATION HERE
+        </Text>
+        <PillTinted pillType={statusType}>{statusText}</PillTinted>
+      </React.Fragment>
+    }
+  />
+);
+
+export { BlockCard, ImageCard, RewardCard, RewardCardFullScreen, VideoCard };

@@ -9,12 +9,15 @@ import {
   BlockCard,
   RewardCard,
   RewardCardFullScreen,
+  VideoCard,
 } from "./Cards";
 import s from "./Styles";
 
 storiesOf("Molecules", module)
   .addDecorator((getStory) => (
-    <Screen style={[s.justify_center, s.align_stretch]}>{getStory()}</Screen>
+    <Screen style={[s.justify_center, s.align_stretch, s.p_sm]}>
+      {getStory()}
+    </Screen>
   ))
   .addDecorator(withKnobs)
   .add("Reward card (single)", () => (
@@ -141,6 +144,32 @@ Officia magna sunt nisi eu cupidatat laborum laboris tempor reprehenderit do do 
         totalDistance={104}
         journeysCompleted={12}
         dateCompleted="21/05/19"
+      />
+    </>
+  ))
+  .add("Video card", () => (
+    <VideoCard
+      timestamp={+Date.now()}
+      statusType="primary"
+      statusText="Video ready to download"
+    />
+  ))
+  .add("Video card (multiple in list)", () => (
+    <>
+      <VideoCard
+        timestamp={+Date.now()}
+        statusType="primary"
+        statusText="Video ready to download"
+      />
+      <VideoCard
+        timestamp={+Date.now()}
+        statusType="warning"
+        statusText="Pending Approval"
+      />
+      <VideoCard
+        timestamp={+Date.now()}
+        statusType="contrast"
+        statusText="Request Declined"
       />
     </>
   ));

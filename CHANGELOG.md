@@ -1,5 +1,13 @@
 # Changelog
 
+# Changelog
+
+## [0.5.0] - 2019-09-18
+
+### Added
+
+- Add initial implemetation of Video card
+
 
 ## [0.4.0] - 2019-08-29
 
