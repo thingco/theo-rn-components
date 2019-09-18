@@ -1,5 +1,6 @@
 import React from "react";
 import { ViewStyle, StyleProp, ImageSourcePropType } from "react-native";
+import { PillType } from "./Pills";
 declare type ImageCardProps = {
     source: ImageSourcePropType;
     textComponent: React.ReactNode;
@@ -67,5 +68,16 @@ declare type BlockCardProps = {
  * @param {RewardCardProps}
  */
 declare const BlockCard: React.FC<BlockCardProps>;
-export { BlockCard, ImageCard, RewardCard, RewardCardFullScreen };
+/**
+ * An extension of the media object component for displaying an overview of a
+ * video.
+ */
+declare type VideoCardProps = {
+    style?: StyleProp<ViewStyle>;
+    timestamp: number;
+    statusType: PillType;
+    statusText: string;
+};
+declare const VideoCard: React.FC<VideoCardProps>;
+export { BlockCard, ImageCard, RewardCard, RewardCardFullScreen, VideoCard };
 //# sourceMappingURL=Cards.d.ts.map

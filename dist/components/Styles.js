@@ -174,6 +174,7 @@ export default StyleSheet.create({
     align_center: { alignItems: "center" },
     align_stretch: { alignItems: "stretch" },
     align_end: { alignItems: "flex-end" },
+    align_self_stretch: { alignSelf: "stretch" },
     justify_start: { justifyContent: "flex-start" },
     justify_between: { justifyContent: "space-between" },
     justify_center: { justifyContent: "center" },

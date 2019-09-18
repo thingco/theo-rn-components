@@ -1,10 +1,12 @@
 import React from "react";
 import { Image, View, ScrollView, Linking, } from "react-native";
-import { Text } from "./Base";
 import { Button } from "./Buttons";
-import { ScoreMeter } from "./Meters";
+import { FormattedDate, FormattedTime } from "./DateTime";
 import { Icon } from "./Icons";
 import { Link } from "./Links";
+import { PillTinted } from "./Pills";
+import { ScoreMeter } from "./Meters";
+import { Text } from "./Base";
 import s, { COLOUR_ORANGE } from "./Styles";
 /**
  * A generic media object, laid out horizontally. Uses render props as "slots"
@@ -125,5 +127,16 @@ const BlockCard = ({ score, totalDistance: totalDistance, journeysCompleted, dat
       </React.Fragment>} rightComponent={<View style={[s.align_center, s.justify_center, s.p_sm]}>
         <Icon selectorString="icons/forward" color={COLOUR_ORANGE} height={32} width={32}/>
       </View>}/>);
-export { BlockCard, ImageCard, RewardCard, RewardCardFullScreen };
+const VideoCard = ({ timestamp, statusType, statusText, ...props }) => (<MediaObject style={props.style} leftComponent={<View style={[s.p_xs, s.img_thumb_width, s.align_self_stretch, s.bg_mid]}/>} textComponent={<React.Fragment>
+        <Text style={[s.text_sm, s.dark, s.mb_xs]}>
+          <FormattedDate style={[s.text_sm]} timestamp={timestamp}/> at{" "}
+          <FormattedTime style={[s.text_sm]} timestamp={timestamp}/>
+        </Text>
+        
+        <Text style={[s.base_font_bold, s.dark, s.mb_base]}>
+          STUB: LOCATION HERE
+        </Text>
+        <PillTinted pillType={statusType}>{statusText}</PillTinted>
+      </React.Fragment>}/>);
+export { BlockCard, ImageCard, RewardCard, RewardCardFullScreen, VideoCard };
 //# sourceMappingURL=Cards.js.map

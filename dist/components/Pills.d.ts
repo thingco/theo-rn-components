@@ -1,6 +1,6 @@
 import React from "react";
 import { TextStyle, StyleProp } from "react-native";
-declare type PillType = "primary" | "contrast" | "warning";
+export declare type PillType = "primary" | "contrast" | "warning";
 declare type PillProps = {
     children: React.ReactNode;
     pillType: PillType;

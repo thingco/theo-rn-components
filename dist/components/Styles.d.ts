@@ -239,6 +239,9 @@ declare const _default: {
     align_end: {
         alignItems: "flex-end";
     };
+    align_self_stretch: {
+        alignSelf: "stretch";
+    };
     justify_start: {
         justifyContent: "flex-start";
     };
